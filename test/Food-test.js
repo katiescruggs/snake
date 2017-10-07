@@ -3,6 +3,8 @@ const assert = chai.assert;
 const Food = require('../lib/Food.js');
 
 describe('Food', function() {
+
+  //test constructor function differences from block
   it('should take in gameW and gameH', function() {
     var food = new Food(10, 10, 10, 10, 'red', 50, 60);
 
@@ -10,13 +12,14 @@ describe('Food', function() {
     assert.equal(food.gameH, 60);
   });
 
+  //check random number x and y values
   it('should have a random number for x and y coordinates', function() {
     var food = new Food(10, 10, 10, 10, 'red', 50, 60);
 
 
-//not sure how to test if the # is greater than 0 and less than canvas.width
-//also need to check if # is divisible by 25
-    // assert.equal(food.x, )
+    //not sure how to test if the # is greater than 0 and less than canvas.width
+    //also need to check if # is divisible by 25
+        // assert.equal(food.x, )
 
   });
 
