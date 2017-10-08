@@ -6,19 +6,19 @@ body {
   background-color: #FAF7E8;
 	border: 1px solid black;
 	margin: auto;
-  position: absolute;
+ /* position: absolute;*/
   z-index: 1 }
 }
 
 .snake-piece {
-  display: none;
+  visibility: hidden;
 }
 
 .game-screen {
     text-align: center;
     position: absolute;
     margin: 0 auto;
-    z-index: 2;
+    z-index: 5;
     width: 100%;
     top: 0;
     background-color: #FAF7E8;
@@ -27,13 +27,14 @@ body {
 
 .game-screen img {
   display: block;
-  margin: auto;
+  margin: 100px auto 50px auto;
   width: 100%;
   max-width: 500px;
+
 }
 
 .hide {
-  display: none;
+ display: none;
 }
 
 .difficulty-buttons {
