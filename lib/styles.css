@@ -3,6 +3,11 @@ body {
 }
 
 #game {
+  background-color: #F5C80E;
 	border: 1px solid black;
 	margin: auto;
+}
+
+img {
+  display: none;
 }
