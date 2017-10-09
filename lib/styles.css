@@ -71,7 +71,7 @@ body {
 #game-over-screen {
   background: #fff;
   color: #4C959D;
-  height: 400px;
+  height: 450px;
   width: 400px;
 
 }
@@ -79,6 +79,16 @@ body {
 .start-button {
   margin-left: 0;
   
+}
+
+#play-again {
+  margin-left: 0;
+  width: 150px;
+
+}
+
+.end-score, .end-high-score {
+  color: #900001;
 }
 
 .big-score {
