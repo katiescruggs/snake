@@ -12,24 +12,46 @@
 
 	<canvas id = "game" width ="600" height = "600"> </canvas>
 
-  <img id="snake-head-up" src="./lib/images/same-size/head-up.png">
-  <img id="snake-head-down" src="./lib/images/same-size/head-down.png">
-  <img id="snake-head-left" src="./lib/images/same-size/head-left.png">
-  <img id="snake-head-right" src="./lib/images/same-size/head-right.png">
-
-  <img id="snake-body-vertical" src="./lib/images/same-size/segment-vertical.png">
-  <img id="snake-body-horizontal" src="./lib/images/same-size/segment-horizontal.png">
-
-  <img id="snake-tail-up" src="./lib/images/same-size/tail-up.png">
-  <img id="snake-tail-down" src="./lib/images/same-size/tail-down.png">
-  <img id="snake-tail-left" src="./lib/images/same-size/tail-left.png">
-  <img id="snake-tail-right" src="./lib/images/same-size/tail-right.png">
+  <section id = "start-screen">
+    <article class ="game-screen">
+      <img src ="./lib/images/snake-logo.png" alt ="snake game logo"/>
+     <div class = "button-div"> 
+      <input type = "button" value ="Easy" id = "easy" class = "game-buttons"/>
+       <input type = "button" value ="Difficult" id = "difficult" class = "game-buttons"/>
+     </div>
 
 
+    </article>
+
+
+  </section> 
+
+  <section id = "instruction-screen" class = "hide">
+    
+    <img src = "./lib/images/click-arrow-icon.png" alt = "click arrows to play" />
+    <input type = "button" value ="Start" id = "start" class = "game-buttons start-button"/>
+
+
+  </section>
+
+    <img id="snake-head-up" class = "snake-piece hide" src="./lib/images/same-size/head-up.png">
+    <img id="snake-head-down" class = "snake-piece hide" src="./lib/images/same-size/head-down.png">
+    <img id="snake-head-left" class = "snake-piece hide" src="./lib/images/same-size/head-left.png">
+    <img id="snake-head-right" class = "snake-piece hide" src="./lib/images/same-size/head-right.png">
+
+    <img id="snake-body-vertical" class = "snake-piece hide" src="./lib/images/same-size/segment-vertical.png">
+    <img id="snake-body-horizontal" class = "snake-piece hide" src="./lib/images/same-size/segment-horizontal.png">
+
+    <img id="snake-tail-up" class = "snake-piece hide" src="./lib/images/same-size/tail-up.png">
+    <img id="snake-tail-down" class = "snake-piece hide" src="./lib/images/same-size/tail-down.png">
+    <img id="snake-tail-left" class = "snake-piece hide" src="./lib/images/same-size/tail-left.png">
+    <img id="snake-tail-right" class = "snake-piece hide" src="./lib/images/same-size/tail-right.png">
 
 
 
-  <img id = "food-img" src="./lib/images/same-size/apple.png">
+
+
+  <img id = "food-img" class = "hide" src="./lib/images/same-size/apple.png">
 
   
   <script src="main.bundle.js"></script>

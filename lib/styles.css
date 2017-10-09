@@ -3,11 +3,72 @@ body {
 }
 
 #game {
-  background-color: #F5C80E;
+  background-color: #FAF7E8;
 	border: 1px solid black;
 	margin: auto;
+ /* position: absolute;*/
+  z-index: 1 }
 }
 
-img {
-  display: none;
+.snake-piece {
+  visibility: hidden;
+}
+
+.game-screen {
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    background-color: #FAF7E8;
+    height: 900px;
+}
+
+.game-screen img {
+  display: block;
+  margin: 100px auto 50px auto;
+  width: 100%;
+  max-width: 500px;
+
+}
+
+.hide {
+ display: none;
+}
+
+.game-buttons {
+  background: #4C959D;
+  color: white;
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border: 0;
+}
+
+.game-buttons:hover {
+  background: white;
+  border: 2px solid #4C959D;
+  color: #4C959D;
+  
+}
+
+#instruction-screen {
+    background: rgba(131, 207, 216, 0.5);
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 300px;
+    width: 300px;
+    top: 200px;
+}
+
+.start-button {
+  margin-left: 0;
+  
 }
