@@ -7,8 +7,8 @@
 
 </head>
 <body>
-  <p>Score: <span class="score"></span></p>
-  <p>High Score: <span class="high-score"></span></p>
+  <p><img src = "./lib/images/big-apple.png" alt ="score apple image"/> <span class="score"></span></p>
+  <p><img src = "./lib/images/trophy.png" alt ="high score trophy image"/> <span class="high-score"></span></p>
 
 	<canvas id = "game" width ="600" height = "600"> </canvas>
 
@@ -33,6 +33,19 @@
 
 
   </section>
+
+  <section id = "game-over-screen" class = "hide">
+    <h3 class="game-over-hed"> Game over </h3>
+    <img src = "./lib/images/snake-dead.png" alt = "dead snake image" />
+
+    <p>Your Score: <strong><span class="end-score"></span></strong> High Score: <strong> <span class="end-high-score"></span></strong></p>
+    <p class = "high-score-message"> </p>
+
+     <input type = "button" value ="Play again" id = "play-again" class = "game-buttons start-button"/>
+
+
+  </section>
+
 
     <img id="snake-head-up" class = "snake-piece hide" src="./lib/images/same-size/head-up.png">
     <img id="snake-head-down" class = "snake-piece hide" src="./lib/images/same-size/head-down.png">
