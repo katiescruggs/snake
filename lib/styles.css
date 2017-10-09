@@ -55,7 +55,7 @@ body {
   
 }
 
-#instruction-screen {
+#instruction-screen, #game-over-screen {
     background: rgba(131, 207, 216, 0.5);
     text-align: center;
     position: absolute;
@@ -68,7 +68,34 @@ body {
     top: 200px;
 }
 
+#game-over-screen {
+  background: #fff;
+  color: #4C959D;
+  height: 450px;
+  width: 400px;
+
+}
+
 .start-button {
   margin-left: 0;
   
+}
+
+#play-again {
+  margin-left: 0;
+  width: 150px;
+
+}
+
+.end-score, .end-high-score {
+  color: #900001;
+}
+
+.big-score {
+  font-size: 50px;
+  color: #4C959D;
+}
+
+.game-over-hed {
+  font-size: 40px;
 }
