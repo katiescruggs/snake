@@ -6,7 +6,6 @@ body {
   background-color: #FAF7E8;
 	border: 1px solid black;
 	margin: auto;
- /* position: absolute;*/
   z-index: 1 }
 }
 
@@ -21,8 +20,22 @@ body {
     z-index: 5;
     width: 100%;
     top: 0;
-    background-color: #FAF7E8;
+    background: black;
+    
+   /* background-image: url("./lib/images/caterpillar-start-screen.png");*/
+  /*  background-color: black;*/
     height: 900px;
+}
+
+.image-button-container {
+    position: relative;
+    margin: 0 auto;
+    z-index: 10;
+    top: 100px;
+    background: url(./images/caterpillar-start-screen.png) no-repeat center top fixed;
+    background-size: 90% ;
+    height: 500px;
+    width: 100%;
 }
 
 .game-screen img {
