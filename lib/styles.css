@@ -1,6 +1,21 @@
 body {
 	text-align: center;
 }
+ h1{
+    font-family: 'Antic Didone', serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 20px;
+
+    /*margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;*/
+  }
+
+  .accent-color {
+    margin-top: 20px;
+    color: #f08324;
+  }
 
 #game {
   background-color: #FAF7E8;
@@ -40,6 +55,7 @@ body {
 
 .head-container {
   float: left;
+  text-align: left;
 }
 .game-screen img {
   display: block;
@@ -54,7 +70,8 @@ body {
 }
 
 .game-buttons {
-  background: #4C959D;
+  background: #f08324;
+  /*background: url(./images/easy-button.png) no-repeat center top fixed;*/
   color: white;
   width: 100px;
   margin-left: 20px;
@@ -66,8 +83,8 @@ body {
 
 .game-buttons:hover {
   background: white;
-  border: 2px solid #4C959D;
-  color: #4C959D;
+  border: 2px solid #f08324;
+  color: #f08324;
   
 }
 
