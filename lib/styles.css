@@ -33,11 +33,14 @@ body {
     z-index: 10;
     top: 100px;
     background: url(./images/caterpillar-start-screen.png) no-repeat center top fixed;
-    background-size: 90% ;
+    background-size: 100% 60% ;
     height: 500px;
     width: 100%;
 }
 
+.head-container {
+  float: left;
+}
 .game-screen img {
   display: block;
   margin: 100px auto 50px auto;
