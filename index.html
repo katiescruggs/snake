@@ -8,11 +8,21 @@
 
 </head>
 <body>
-  <p>
-    <img src = "./lib/images/big-apple.png" alt ="score apple image"/> <span class="score"></span>
-    <img src = "./lib/images/trophy.png" alt ="high score trophy image"/> <span class="high-score"></span></p>
+  <div class="main-image">
+    <img src ="./lib/images/caterpillar-sun-canvas.jpg"  alt ="sun smiling" class="sun" />
+  </div>
+  <div class ="score-div">
+    <div class="game-score-div">
+    <img src = "./lib/images/apple2.png" alt ="score apple image"/> 
 
-	<canvas id = "game" width ="600" height = "600"> </canvas>
+
+    <span class="score big-score"></span> </div>
+    <div class ="top-score-div"><img src = "./lib/images/butterfly.png" alt ="high score butterfly image"/> <span class="high-score big-score"></span> </div>
+
+  </div>
+
+<main>
+	<canvas id = "game" width ="700" height = "700"> </canvas>
 
   <section id = "start-screen">
     <article class ="game-screen">
@@ -31,9 +41,6 @@
 
       </div>
       
-      <!-- <img src ="./lib/images/caterpillar-start-screen.png" alt ="snake game logo"/> -->
-    
-
     </article>
 
 
@@ -49,7 +56,7 @@
 
   <section id = "game-over-screen" class = "hide">
     <h3 class="game-over-hed"> Game over </h3>
-    <img src = "./lib/images/snake-dead.png" alt = "dead snake image" />
+    <img src = "./lib/images/dead-caterpillar.png" alt = "dead snake image" />
 
     <p>Your Score: <strong><span class="end-score"></span></strong> High Score: <strong> <span class="end-high-score"></span></strong></p>
     <p class = "high-score-message"> </p>
@@ -59,7 +66,7 @@
 
   </section>
 
-
+</main>
     <img id="cater-head-vertical" class = "snake-piece hide" src="./lib/images/head-vertical.png">
     <img id="cater-head-horizontal" class = "snake-piece hide" src="./lib/images/head-horizontal.png">
 
