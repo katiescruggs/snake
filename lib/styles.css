@@ -15,8 +15,8 @@ body {
   }
 
 #game {
-  background-color: #FAF7E8;
-	border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+	border: 5px solid #fcf431;
 	margin: auto;
   z-index: 1 }
 }
@@ -129,7 +129,7 @@ main {
 
 #game-over-screen {
   background: #fff;
-  color: #4C959D;
+  color: #f08324;
   height: 450px;
   width: 400px;
 
@@ -147,7 +147,8 @@ main {
 }
 
 .end-score, .end-high-score {
-  color: #900001;
+  font-size: 30px;
+  color: #f08324;
 }
 
 .game-over-hed {
