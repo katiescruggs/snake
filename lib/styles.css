@@ -1,6 +1,7 @@
 body {
 	text-align: center;
   margin: 0 20px;
+  overflow: hidden;
 }
  h1{
     font-family: 'Antic Didone', serif;
@@ -40,18 +41,27 @@ body {
 }
 
 .main-image {
-  height: 240px;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sun {
+  height: 125px;
 }
 .image-button-container {
     position: relative;
     margin: 0 auto;
     z-index: 10;
     top: 100px;
-    background: url(./images/caterpillar-start-screen.png) no-repeat center top fixed;
-    background-size: 100% 60% ;
-    height: 500px;
+    background: url(./images/caterpillar-start-screen-tall.png) no-repeat center top fixed;
+    background-size: 100% 75% ;
+    height: 600px;
     width: 100%;
 }
+
 
 main {
   background-image: url(./images/caterpillar-leaf.jpg);
@@ -70,20 +80,28 @@ main {
 }
 
 .game-score-div {
-  float: left;
-  width: 40%;
+ /* float: left;*/
+ /* width: 40%;*/
   margin-left: 60px;
 
 }
 
-.score-div {
-  height: 100px;
+/*.score-div {
+  height: 60px;
   margin-top: 10px;
+}
+*/
+.score-icon {
+  width: 50px;
+}
+
+.score-icon-2 {
+  width: 70px;
 }
 
 .top-score-div {
-  float: right;
-  width: 40%;
+  /*float: right;*/
+  /*width: 40%;*/
   margin-right: 60px;
 }
 
@@ -124,7 +142,7 @@ main {
     z-index: 5;
     height: 300px;
     width: 300px;
-    top: 500px;
+    top: 200px;
 }
 
 #game-over-screen {
@@ -153,4 +171,8 @@ main {
 
 .game-over-hed {
   font-size: 40px;
+}
+
+.accent-2 {
+  color: gray;
 }

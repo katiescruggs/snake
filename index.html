@@ -9,17 +9,25 @@
 </head>
 <body>
   <div class="main-image">
-    <img src ="./lib/images/caterpillar-sun-canvas.jpg"  alt ="sun smiling" class="sun" />
-  </div>
-  <div class ="score-div">
-    <div class="game-score-div">
-    <img src = "./lib/images/apple2.png" alt ="score apple image"/> 
+    
+     <div class="game-score-div">
+    <img src = "./lib/images/apple2.png" alt ="score apple image"/ class="score-icon"> 
 
 
     <span class="score big-score"></span> </div>
-    <div class ="top-score-div"><img src = "./lib/images/butterfly.png" alt ="high score butterfly image"/> <span class="high-score big-score"></span> </div>
+
+    <img src ="./lib/images/caterpillar-sun-canvas-2.png"  alt ="sun smiling" class="sun" />
+  
+  <div class ="top-score-div"><img src = "./lib/images/butterfly.png" alt ="high score butterfly image" class ="score-icon-2"/> <span class="high-score big-score"></span> </div>
 
   </div>
+  
+
+ <!--  <div class ="score-div"> -->
+   
+    
+
+  <!-- </div> -->
 
 <main>
 	<canvas id = "game" width ="600" height = "600"> </canvas>
@@ -58,7 +66,7 @@
     <h3 class="game-over-hed"> Game over </h3>
     <img src = "./lib/images/dead-caterpillar.png" alt = "dead snake image" />
 
-    <p>Your Score: <strong><span class="end-score"></span></strong> High Score: <strong> <span class="end-high-score"></span></strong></p>
+    <p><span class="accent-2">Your Score:</span> <strong><span class="end-score"></span></strong> <span class="accent-2">High Score:</span> <strong> <span class="end-high-score"></span></strong></p>
     <p class = "high-score-message"> </p>
 
      <input type = "button" value ="Play again" id = "play-again" class = "game-buttons start-button"/>
