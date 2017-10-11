@@ -1,5 +1,6 @@
 body {
 	text-align: center;
+  margin: 0 20px;
 }
  h1{
     font-family: 'Antic Didone', serif;
@@ -39,7 +40,7 @@ body {
 }
 
 .main-image {
-  height: 200px;
+  height: 240px;
 }
 .image-button-container {
     position: relative;
@@ -64,6 +65,28 @@ body {
 
 }
 
+.game-score-div {
+  float: left;
+  width: 40%;
+  margin-left: 60px;
+
+}
+
+.score-div {
+  height: 100px;
+  margin-top: 10px;
+}
+
+.top-score-div {
+  float: right;
+  width: 40%;
+  margin-right: 60px;
+}
+
+.big-score {
+  color: #f08324;
+  font-size: 40px;
+}
 .hide {
  display: none;
 }
@@ -88,7 +111,7 @@ body {
 }
 
 #instruction-screen, #game-over-screen {
-    background: rgba(131, 207, 216, 0.5);
+    background: rgba(244, 127, 50, 0.4);
     text-align: center;
     position: absolute;
     margin: 0 auto;
@@ -97,7 +120,7 @@ body {
     z-index: 5;
     height: 300px;
     width: 300px;
-    top: 200px;
+    top: 500px;
 }
 
 #game-over-screen {
@@ -121,11 +144,6 @@ body {
 
 .end-score, .end-high-score {
   color: #900001;
-}
-
-.big-score {
-  font-size: 50px;
-  color: #4C959D;
 }
 
 .game-over-hed {
