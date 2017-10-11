@@ -38,6 +38,9 @@ body {
     height: 900px;
 }
 
+.main-image {
+  height: 200px;
+}
 .image-button-container {
     position: relative;
     margin: 0 auto;
