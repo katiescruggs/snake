@@ -1,7 +1,19 @@
 const chai = require('chai');
 const assert = chai.assert;
 const Game = require('../lib/Game.js');
-global.localStorage = {}
+global.localStorage = {
+  getItem: function(){
+  console.log('getItem');
+  },
+  setItem: function(){
+    console.log('setItem');
+  }}
+global.document = {
+  getElementById: function() {},
+  querySelector: function() {
+    return {innerText: 'innerText'};
+  }
+}
 
 describe('Game', function() {
 
@@ -24,23 +36,11 @@ describe('Game', function() {
     assert.equal(typeof(game.gameLoop), 'function');
   });
 
-  // it.skip('should stop the gameLoop if the snake dies', function() {
-  //   var game = new Game('one', 'two', 'three', 'foodImage');
-  //   //game.snake.onSnakeCoordinates(game.snake.body[0]) = true;
+  it('score increases when raiseScore is called', function() {
+    var game = new Game('context', 600, 600);
+    game.raiseScore();
+    assert.equal(game.score, 1);
 
-  //   game.gameLoop();
-  //   assert.equal(game.stillPlaying, false);
-  // });
-
-
-//gameLoop
-
-//displayScore
-
-//endDisplayScore
-
-//startGame
-
-//raiseScore
+  });
 
 });

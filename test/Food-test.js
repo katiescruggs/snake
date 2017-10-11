@@ -15,11 +15,6 @@ describe('Food', function() {
     assert.equal(food.gameH, 60);
   });
 
-  it.skip('should take in its image', function() {
-    var food = new Food(10, 10, 10, 10, 'red', 50, 60, 'image here');
-    assert.equal(food.foodImage, 'image here');
-  });
-
   //check random number x and y values
   it('should have a random number for x and y coordinates', function() {
     var food = new Food(10, 10, 30, 30, 'red', 600, 600, 'image');
