@@ -53,6 +53,10 @@ body {
     width: 100%;
 }
 
+main {
+  background-image: url(./images/caterpillar-leaf.jpg);
+}
+
 .head-container {
   float: left;
   text-align: left;
