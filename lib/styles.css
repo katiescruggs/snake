@@ -47,9 +47,9 @@ body {
     margin: 0 auto;
     z-index: 10;
     top: 100px;
-    background: url(./images/caterpillar-start-screen.png) no-repeat center top fixed;
-    background-size: 100% 60% ;
-    height: 500px;
+    background: url(./images/caterpillar-start-screen-tall.png) no-repeat center top fixed;
+    background-size: 100% 75% ;
+    height: 600px;
     width: 100%;
 }
 
