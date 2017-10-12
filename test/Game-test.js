@@ -19,7 +19,6 @@ describe('Game', function() {
     assert.equal(typeof(game), 'object');
   });
 
-
   it('should take in its parameters', function() {
     var game = new Game('context', 600, 600);
     assert.equal(game.context, 'context');
@@ -58,7 +57,7 @@ describe('Game', function() {
     game.checkFoodConsumption();
 
     assert.equal(game.score, 1);
-  })
+  });
 
   it('should set new high score if the current score is higher', function() {
     var game = new Game('context', 600, 600);
@@ -74,7 +73,7 @@ describe('Game', function() {
       clearRect: function() {},
       drawImage: function() {}
     };
-    
+
     game.startGame();
     assert.equal(game.stillPlaying, true);
     
@@ -83,7 +82,4 @@ describe('Game', function() {
 
     assert.equal(game.stillPlaying, false);
   });
-
-  
-
 });

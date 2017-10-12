@@ -7,7 +7,6 @@ const { blockSize } = require('../lib/gameConfig.js');
 
 describe('Food', function() {
 
-  //test constructor function differences from block
   it('should take in gameW and gameH', function() {
     var food = new Food(10, 10, 10, 10, 'red', 50, 60);
 
@@ -15,7 +14,6 @@ describe('Food', function() {
     assert.equal(food.gameH, 60);
   });
 
-  //check random number x and y values
   it('should have a random number for x and y coordinates', function() {
     var food = new Food(10, 10, 30, 30, 'red', 600, 600, 'image');
     
@@ -36,6 +34,5 @@ describe('Food', function() {
 
     expect(food.x).to.be.within(0, food.gameW);
     expect(food.y).to.be.within(0, food.gameH);
-
   });
 });

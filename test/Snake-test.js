@@ -16,13 +16,11 @@ describe('Snake', function() {
     var snake = new Snake (600, 600);
     assert.equal(snake.x, 300);
     assert.equal(snake.y, 300);
-
   });
 
   it('should start with a body of three pieces', function () {
     var snake = new Snake (600, 600);
     assert.equal(snake.body.length, 3)
-
   });
 
   it('should have a body that is an array', function() {
@@ -43,7 +41,6 @@ describe('Snake', function() {
     assert.equal(snake.body.length, 3)
     snake.grow(1)
     assert.equal(snake.body.length, 4)
-
   });
 
   it('should eat when it hits food', function () {
@@ -58,7 +55,6 @@ describe('Snake', function() {
     food.y = 10;
 
     assert.equal(snake.eat(food), true);
-
   });
 
   it('should be able to move based on key codes from arrow keys', function () {
@@ -84,12 +80,11 @@ describe('Snake', function() {
 
   it('should prevent user from turning backward', function() {
     var snake = new Snake(600, 600);
+   
     snake.changeDirection(37);
-
     assert.equal(snake.currentDirection(), 'left');
 
     snake.changeDirection(39);
-
     assert.equal(snake.currentDirection(), 'left');
   });
 
@@ -121,8 +116,5 @@ describe('Snake', function() {
 
     snake.body[0].y = 650;
     assert.equal(snake.hitWall(), true);
-
-
-  })
-
+  });
 });
