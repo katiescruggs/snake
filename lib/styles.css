@@ -34,9 +34,6 @@ body {
     width: 100%;
     top: 0;
     background: black;
-    
-   /* background-image: url("./lib/images/caterpillar-start-screen.png");*/
-  /*  background-color: black;*/
     height: 900px;
 }
 
@@ -57,9 +54,9 @@ body {
     z-index: 10;
     top: 100px;
     background: url(./images/caterpillar-start-screen-tall.png) no-repeat center top fixed;
-    background-size: 100% 75% ;
+    background-size: 1200px 550px ;
     height: 600px;
-    width: 100%;
+    width: 70%;
 }
 
 
@@ -146,21 +143,21 @@ main {
 
 }
 
-#instruction-screen {
-  background: white;
-   /*background: rgba(244, 127, 50, 0.4);*/
+  
+  #instruction-screen {
+    background: rgba(244, 127, 50, 0.4);
     text-align: center;
     position: absolute;
     margin: 0 auto;
-    color: #f08324;
+    color: #fff;
     left: 0;
     right: 0;
+    font-size: 20px;
     z-index: 5;
-    height: 100px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     top: 150px;
 }
-
 .start-button {
   margin-left: 0;
   
