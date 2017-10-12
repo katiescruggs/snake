@@ -38,7 +38,7 @@ describe('Game', function() {
         assert.equal(typeof(game.gameLoop), 'function');
   });
 
-  it('score increases when raiseScore is called', function() {
+  it('should increase score when raiseScore is called', function() {
     var game = new Game('context', 600, 600);
     assert.equal(game.score, 0);
     game.raiseScore();
@@ -49,8 +49,11 @@ describe('Game', function() {
     var game = new Game('context', 600, 600);
     assert.equal(game.score, 0);
 
-    this.snake.body[0].x = 10;
-    this.food.x = 10;
+    game.snake.body[0].x = 10;
+    game.food.x = 10;
+
+    game.snake.body[0].y = 10;
+    game.food.y = 10;
 
     game.checkFoodConsumption();
 
