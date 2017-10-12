@@ -68,7 +68,7 @@ describe('Game', function() {
     assert.equal(game.highScore, 100);
   });
 
-  it('should stop the game loop if the snake dies', function() {
+  it('should change property stillPlaying to false if the snake dies', function() {
     var game = new Game('context', 600, 600);
     game.context = {
       clearRect: function() {},
