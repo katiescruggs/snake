@@ -32,7 +32,7 @@ describe('Food', function() {
 
   it('should reset coordinates', function() {
     var food = new Food(10, 10, 30, 30, 'red', 600, 600, 'image');
-    food.resetCoordinates();
+    food.resetCoordinates([]);
 
     expect(food.x).to.be.within(0, food.gameW);
     expect(food.y).to.be.within(0, food.gameH);
