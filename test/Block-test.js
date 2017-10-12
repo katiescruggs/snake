@@ -17,7 +17,6 @@ describe('Block', function() {
 
   it('should have a default color of green', function() {
     var block = new Block(10, 20, 30, 40);
-
     assert.equal(block.color, 'green');
   });
 
@@ -30,5 +29,4 @@ describe('Block', function() {
     var block = new Block(10, 20, 30, 40, 'red', 'up');
     assert.equal(typeof(block.draw), 'function');
   });
-
 });

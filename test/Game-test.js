@@ -19,7 +19,6 @@ describe('Game', function() {
     assert.equal(typeof(game), 'object');
   });
 
-
   it('should take in its parameters', function() {
     var game = new Game('context', 600, 600);
     assert.equal(game.context, 'context');
@@ -29,7 +28,7 @@ describe('Game', function() {
     assert.equal(typeof(game.food), 'object');
     assert.equal(game.score, 0);
     assert.equal(game.highScore, 0);
-    assert.equal(game.stillPlaying, true);
+    assert.equal(game.stillPlaying, false);
     assert.equal(game.speed, 180);
   });
 
@@ -58,7 +57,7 @@ describe('Game', function() {
     game.checkFoodConsumption();
 
     assert.equal(game.score, 1);
-  })
+  });
 
   it('should set new high score if the current score is higher', function() {
     var game = new Game('context', 600, 600);
@@ -74,6 +73,8 @@ describe('Game', function() {
       clearRect: function() {},
       drawImage: function() {}
     };
+
+    game.startGame();
     assert.equal(game.stillPlaying, true);
     
     game.snake.body[0].x = -100;
@@ -81,7 +82,4 @@ describe('Game', function() {
 
     assert.equal(game.stillPlaying, false);
   });
-
-  
-
 });

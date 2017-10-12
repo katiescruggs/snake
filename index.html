@@ -9,80 +9,64 @@
 </head>
 <body>
   <div class="main-image">
-    
-     <div class="game-score-div">
-    <img src = "./lib/images/apple2.png" alt ="score apple image"/ class="score-icon"> 
-
-
-    <span class="score big-score"></span> </div>
-
+    <div class="game-score-div">
+      <img src = "./lib/images/apple2.png" alt ="score apple image"/ class="score-icon"> 
+      <span class="score big-score"></span> 
+    </div>
     <img src ="./lib/images/caterpillar-sun-canvas-2.png"  alt ="sun smiling" class="sun" />
-  
-  <div class ="top-score-div"><img src = "./lib/images/butterfly.png" alt ="high score butterfly image" class ="score-icon-2"/> <span class="high-score big-score"></span> </div>
-
+    <div class ="top-score-div">
+      <img src = "./lib/images/butterfly.png" alt ="high score butterfly image" class ="score-icon-2"/>
+      <span class="high-score big-score"></span>
+    </div>
   </div>
 
-<main>
-	<canvas id = "game" width ="600" height = "600"> </canvas>
-
-  <section id = "start-screen">
-    <article class ="game-screen">
-      <div class = "image-button-container">
-        <div class ="head-container">
-          <h1 class="accent-color"> Feed </h1>
-          <h1> The</h1>
-          <h1> Very Hungry </h1><h1>Caterpillar </h1>
-          <div class = "button-div"> 
-          <input type = "button" value ="Easy" id = "easy" class = "game-buttons"/>
-          <input type = "button" value ="Difficult" id = "difficult" class = "game-buttons"/>
+  <main>
+	  <canvas id = "game" width ="600" height = "600"> </canvas>
+    <section id = "start-screen">
+      <article class ="game-screen">
+        <div class = "image-button-container">
+          <div class ="head-container">
+            <h1 class="accent-color"> Feed </h1>
+            <h1> The</h1>
+            <h1> Very Hungry </h1><h1>Caterpillar </h1>
+            <div class = "button-div"> 
+              <input type = "button" value ="Easy" id = "easy" class = "game-buttons"/>
+              <input type = "button" value ="Difficult" id = "difficult" class = "game-buttons"/>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-  </section> 
+      </article>
+    </section> 
 
-  <section id = "instruction-screen" class="hide">
-     <img src ="./lib/images/click-arrow-icon.png"  alt ="instructions" />
-    <p> Press space bar to start  </p>
-  </section>
+    <section id = "instruction-screen" class="hide">
+      <img src ="./lib/images/click-arrow-icon.png"  alt ="instructions" />
+      <p> Press space bar to start  </p>
+    </section>
 
-  <section id = "game-over-screen" class = "hide">
-    <h3 class="game-over-hed"> Game over </h3>
-    <img src = "./lib/images/dead-caterpillar.png" alt = "dead snake image" />
+    <section id = "game-over-screen" class = "hide">
+      <h3 class="game-over-hed"> Game over </h3>
+      <img src = "./lib/images/dead-caterpillar.png" alt = "dead snake image" />
+      <p><span class="accent-2">Your Score:</span> <strong><span class="end-score"></span></strong> <span class="accent-2">High Score:</span> <strong> <span class="end-high-score"></span></strong></p>
+      <p class = "high-score-message"> </p>
+      <input type = "button" value ="Play again" id = "play-again" class = "game-buttons start-button"/>
+    </section>
+  </main>
 
-    <p><span class="accent-2">Your Score:</span> <strong><span class="end-score"></span></strong> <span class="accent-2">High Score:</span> <strong> <span class="end-high-score"></span></strong></p>
-    <p class = "high-score-message"> </p>
-
-     <input type = "button" value ="Play again" id = "play-again" class = "game-buttons start-button"/>
-
-
-  </section>
-
-</main>
-    <img id="cater-head-vertical" class = "snake-piece hide" src="./lib/images/head-vertical.png">
-    <img id="cater-head-horizontal" class = "snake-piece hide" src="./lib/images/head-horizontal.png">
-
-    <img id="cater-body1" class = "snake-piece hide" src="./lib/images/body1.png">
-    <img id="cater-body2" class = "snake-piece hide" src="./lib/images/body2.png">
-    <img id="cater-body3" class = "snake-piece hide" src="./lib/images/body3.png">
-    <img id="cater-body4" class = "snake-piece hide" src="./lib/images/body4.png">
-    <img id="cater-body5" class = "snake-piece hide" src="./lib/images/body5.png">
-    
-
-
-    <img id="cater-legs-vertical1" class = "snake-piece hide" src="./lib/images/legs-1-vertical.png">
-    <img id="cater-legs-horizontal1" class = "snake-piece hide" src="./lib/images/legs-1-horizontal.png">
-
-    <img id="cater-legs-vertical2" class = "snake-piece hide" src="./lib/images/legs-2-vertical.png">
-    <img id="cater-legs-horizontal2" class = "snake-piece hide" src="./lib/images/legs-2-horizontal.png">
-
-    <img id="apple" class ="hide" src="./lib/images/apple2.png">
-    <img id="orange" class ="hide" src="./lib/images/orange.png">
-    <img id="pear" class ="hide" src="./lib/images/pear.png">
-    <img id="strawberry" class ="hide" src="./lib/images/strawberry.png">
-
-
-  
+  <img id="cater-head-vertical" class = "snake-piece hide" src="./lib/images/head-vertical.png">
+  <img id="cater-head-horizontal" class = "snake-piece hide" src="./lib/images/head-horizontal.png">
+  <img id="cater-body1" class = "snake-piece hide" src="./lib/images/body1.png">
+  <img id="cater-body2" class = "snake-piece hide" src="./lib/images/body2.png">
+  <img id="cater-body3" class = "snake-piece hide" src="./lib/images/body3.png">
+  <img id="cater-body4" class = "snake-piece hide" src="./lib/images/body4.png">
+  <img id="cater-body5" class = "snake-piece hide" src="./lib/images/body5.png">
+  <img id="cater-legs-vertical1" class = "snake-piece hide" src="./lib/images/legs-1-vertical.png">
+  <img id="cater-legs-horizontal1" class = "snake-piece hide" src="./lib/images/legs-1-horizontal.png">
+  <img id="cater-legs-vertical2" class = "snake-piece hide" src="./lib/images/legs-2-vertical.png">
+  <img id="cater-legs-horizontal2" class = "snake-piece hide" src="./lib/images/legs-2-horizontal.png">
+  <img id="apple" class ="hide" src="./lib/images/apple2.png">
+  <img id="orange" class ="hide" src="./lib/images/orange.png">
+  <img id="pear" class ="hide" src="./lib/images/pear.png">
+  <img id="strawberry" class ="hide" src="./lib/images/strawberry.png">
   <script src="main.bundle.js"></script>
 </body>
 </html>
