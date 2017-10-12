@@ -80,17 +80,10 @@ main {
 }
 
 .game-score-div {
- /* float: left;*/
- /* width: 40%;*/
   margin-left: 60px;
-
 }
 
-/*.score-div {
-  height: 60px;
-  margin-top: 10px;
-}
-*/
+
 .score-icon {
   width: 50px;
 }
