@@ -44,21 +44,15 @@ describe('Snake', function() {
     let segment = snake.body[0]
 
     assert.equal(snake.eat(), false);
-    snake.body[0].x === 10
+    snake.body[0].x === 10;
     assert.equal(snake.eat(), true);
 
   });
 
-  it('should move left by default', function () {
-    var snake = new Snake (60, 60);
-    assert.instanceOf(snake.body[0], Block);
-    let segment = snake.body[0];
-    assert.equal(segment.direction, 'left');
-    assert.equal(segment.x, 30 );
-
+  it.skip('should be able to move left when left arrow is pressed', function () {
+    var snake = new Snake (600, 600);
+    snake.changeDirection(37)
+    assert.equal(snake.x, 270)
   });
-
- 
-  
 
 });
