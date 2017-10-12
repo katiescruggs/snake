@@ -45,6 +45,18 @@ describe('Game', function() {
     assert.equal(game.score, 1);
   });
 
+  it('should increase score if food is eaten', function() {
+    var game = new Game('context', 600, 600);
+    assert.equal(game.score, 0);
+
+    this.snake.body[0].x = 10;
+    this.food.x = 10;
+
+    game.checkFoodConsumption();
+
+    assert.equal(game.score, 1);
+  })
+
   it('should set new high score if the current score is higher', function() {
     var game = new Game('context', 600, 600);
     assert.equal(game.highScore, 0);
